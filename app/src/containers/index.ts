@@ -1,0 +1,5 @@
+export { default as App } from './App'
+export { default as Home } from './Home'
+export { default as Employees } from './Employees'
+export { default as Offices } from './Offices'
+export { default as Departments } from './Departments'

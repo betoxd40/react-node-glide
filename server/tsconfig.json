@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "allowJs": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"],
+      "@fixtures": ["src/fixtures"],
+      "@routes/v1": ["src/api/routes/v1"],
+      "@constants": ["src/constants"],
+      "@utils/*": ["src/utils/*"],
+      "@middlewares/*": ["src/api/middlewares/*"],
+      "@app/types": ["src/types"]
+    },
+    "types": ["@types/node"]
+  },
+  "include": ["src", "src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
